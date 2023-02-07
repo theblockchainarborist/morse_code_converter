@@ -2,7 +2,7 @@
     <div id="text-to-morse-code-main-div">
       <h1>Text to Morse Code</h1>
       <div class="input-div">
-        <p class="bold">Input Text:</p>
+        <p class="bold label">Input Text: &nbsp;</p>
         <div
           class="text-input-box"
           ref="input"
@@ -61,12 +61,16 @@ import morse from 'morse-code-converter'
     border-radius: 18px;
   }
 
+  #text-to-morse-code-main-div:hover {
+    box-shadow: 0px 0px 15px #f8f8f8;
+  }
+
   .text-input-box {
     border: solid 2px black;
-    font-size: 18px;
-    width: 100%;
+    font-size: 20px;
+    width: 70%;
     max-width: 550px;
-    margin-right: 50px;
+    margin-right: 20px;
     height: fit-content;
     white-space: wrap;
     border-radius: 4px;
@@ -98,5 +102,16 @@ import morse from 'morse-code-converter'
 }
 
 
+@media all and (max-width:800px) {
+  #text-to-morse-code-main-div {
+    width: 60%;
+  }
+}
+
+@media all and (max-width:390px) {
+  .convert-btn {
+      font-size: 14px;
+  }
+}
   
   </style>

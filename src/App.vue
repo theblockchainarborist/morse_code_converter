@@ -2,7 +2,7 @@
   <div id="app">
     <div id="header-div">
       <header>
-        <h1>Morse Code Converter</h1>
+        <h1 id="title">Morse Code Converter</h1>
       </header>
     </div>
     <main-view />
@@ -49,11 +49,22 @@ header {
   margin: 0% 2% 0px 2%;
   padding: 0% 1%;
   background-color:aliceblue;
+  box-shadow: 0px 0px 15px #f8f8f8;
 }
 
 #header-div {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+#title {
+  font-size: 50px;
+}
+
+@media all and (max-width:800px) {
+  #title {
+    font-size: 40px;
+  }
 }
 </style>

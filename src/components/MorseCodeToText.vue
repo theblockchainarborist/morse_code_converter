@@ -4,7 +4,7 @@
         Morse Code to Text
     </h1>
     <div class="input-div">
-        <p class="bold">
+        <p class="bold label">
             Input Code:
         </p>
         <div ref="morseInput" 
@@ -66,12 +66,16 @@ export default {
     border-radius: 18px;
 }
 
+#morse-code-to-text-main-div:hover {
+    box-shadow: 0px 0px 15px #f8f8f8;
+  }
+
 #morse-code-input {
     border: solid 2px black;
-    font-size: 18px;
-    width: 100%;
+    font-size: 20px;
+    width: 70%;
     max-width: 550px;
-    margin-right: 50px;
+    margin-right: 20px;
     height: fit-content;
     white-space: wrap;
     border-radius: 4px;
@@ -99,6 +103,23 @@ export default {
 
 .convert-btn:hover {
     background-color: rgb(214, 214, 214);
+}
+
+.label {
+    font-size: 20px;
+}
+
+
+@media all and (max-width:800px) {
+    #morse-code-to-text-main-div {
+        width: 60%;
+    }
+}
+
+@media all and (max-width:390px) {
+    .convert-btn {
+        font-size: 20px;
+    }
 }
 
 </style>

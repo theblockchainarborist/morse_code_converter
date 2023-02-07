@@ -2,12 +2,12 @@
     <div id="result-panel-div">
         <div class="scrollbar">
             <div>
-                <p class="input-p nowrap">
+                <p class="input-p result-output">
                     <strong>Input:</strong> &nbsp; {{ getInput }}
                 </p>
             </div>
             <div id="result-output-div">
-                <p class="typingEffect input-p" :key="getOutput">
+                <p class="result-output input-p" :key="getOutput">
                 <strong>Output:</strong> &nbsp; {{ getOutput }}
                 </p>
             </div>
@@ -44,7 +44,7 @@ export default {
     text-align: left;
   }
 
-  .typingEffect {
+  .result-output {
     width: 0;
     font-size: 16px;
     white-space: pre; /* Keeps the text on a single line */
@@ -63,6 +63,7 @@ export default {
     align-self: center;
     border-radius: 20px;
     margin-top: 3%;
+    margin-bottom: 2%;
     background-color:aliceblue;
   }
 
@@ -79,7 +80,7 @@ export default {
   }
 
   ::-webkit-scrollbar {
-    width: 50px;
+    width: 10px;
     background-color: none;
   }
   
